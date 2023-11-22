@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <h2>{{ isEdit ? 'Edit Unicorn' : 'Add Unicorn' }}</h2>
+  <form (ngSubmit)="saveUser()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="user.name" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="age" class="form-label">Age:</label>
+      <input type="number" id="age" name="age" [(ngModel)]="user.age" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="colour" class="form-label">Favourite Colour:</label>
+      <input type="text" id="colour" name="colour" [(ngModel)]="user.colour" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary">{{ isEdit ? 'Update' : 'Add' }}</button>
+    </div>
+  </form>
+</div>
