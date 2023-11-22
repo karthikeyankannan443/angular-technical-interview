@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+html, body { height: 100%; font-family: 'Arial', sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  
+  .container {
+    max-width: 800px;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .btn-danger {
+    margin: 0;
+    padding: 6px 12px;
+  }
